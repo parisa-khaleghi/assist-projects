@@ -1,9 +1,6 @@
 from git import repo
 import datetime
 import dateutil.tz
-from dateutil.relativedelta import relativedelta
-
-
 
 # function to commit in costum date
 def commit(project_path, file_path, message, year, month, day, hour, minute):
@@ -24,12 +21,18 @@ day = datetime.datetime.now().day
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now().minute
 
+# HTML code with embedded video
+html_code = """
+<html>
+<body>
+    <iframe src="https://player.vimeo.com/video/872245861?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Leap Year Savings">
+    </iframe>
+</body>
+</html>
+"""
 
 
-
-
-
-message = 'init: create the file and add primary codes'
+message = 'update: reading embedded code'
 
 # call the function with custom data
 commit(project_path, file_path, message, year, month, day, hour, minute)
