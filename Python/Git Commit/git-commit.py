@@ -10,15 +10,16 @@ def commit(project_path, file_path, message, year, month, day, hour, minute):
     origin = r.remotes[0]
     origin.push()
 
+
 # fill out information for project path and file path on your system
 project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
 file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
 
 print("hello")
 # fill out information for commiting
-message = 'test: if its working'
+message = 'test: commiting for 2 month earlier'
 year = datetime.datetime.now().year
-month = datetime.datetime.now().month
+month = datetime.datetime.now().month-2
 day = datetime.datetime.now().day
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now().minute
