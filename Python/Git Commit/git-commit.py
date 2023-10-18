@@ -15,9 +15,8 @@ def commit(project_path, file_path, message, year, month, day, hour, minute):
 project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
 file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
 
-print("hello")
 # fill out information for commiting
-message = 'test: commiting for 2 month earlier'
+message = 'update: remove unnecessary lines'
 year = datetime.datetime.now().year
 month = datetime.datetime.now().month-2
 day = datetime.datetime.now().day
