@@ -19,7 +19,7 @@ file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Extract
 
 # fill out information for commiting
 year = datetime.datetime.now().year
-month = datetime.datetime.now()-relativedelta(months=2)
+month = (datetime.datetime.now()-relativedelta(months=2)).month
 day = datetime.datetime.now().day
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now().minute
