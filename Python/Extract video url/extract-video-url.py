@@ -1,6 +1,7 @@
 from git import repo
 import datetime
 import dateutil.tz
+from bs4 import BeautifulSoup
 
 # function to commit in costum date
 def commit(project_path, file_path, message, year, month, day, hour, minute):
@@ -25,14 +26,29 @@ minute = datetime.datetime.now().minute
 html_code = """
 <html>
 <body>
-    <iframe src="https://player.vimeo.com/video/872245861?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Leap Year Savings">
-    </iframe>
+    <p>Check out this embedded video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <p>And another one:</p>
+    <iframe width="560" height="315" src="https://www.vimeo.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
 """
 
+# Parse the HTML code with BeautifulSoup
+soup = BeautifulSoup(html_code, 'html.parser')
 
-message = 'update: reading embedded code'
+# Find all iframe elements
+iframes = soup.find_all('iframe')
+
+# Extract video URLs from iframe src attributes
+video_urls = [iframe['src'] for iframe in iframes]
+
+# Print the extracted video URLs
+for url in video_urls:
+    print(url)
+
+
+message = 'update: use BeautifulSoup to extract video links'
 
 # call the function with custom data
 commit(project_path, file_path, message, year, month, day, hour, minute)
