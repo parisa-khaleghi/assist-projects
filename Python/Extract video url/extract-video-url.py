@@ -1,6 +1,9 @@
 from git import repo
 import datetime
 import dateutil.tz
+from dateutil.relativedelta import relativedelta
+
+
 
 # function to commit in costum date
 def commit(project_path, file_path, message, year, month, day, hour, minute):
@@ -12,15 +15,21 @@ def commit(project_path, file_path, message, year, month, day, hour, minute):
 
 # fill out information for project path and file path on your system
 project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
-file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
+file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Extract video url/extract-video-url.py"
 
 # fill out information for commiting
-message = 'fix: object cannot be interpreted as an integer'
 year = datetime.datetime.now().year
-month = datetime.datetime.now().month
+month = datetime.datetime.now()-relativedelta(months=2)
 day = datetime.datetime.now().day
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now().minute
+
+
+
+
+
+
+message = 'init: create the file and add primary codes'
 
 # call the function with custom data
 commit(project_path, file_path, message, year, month, day, hour, minute)
