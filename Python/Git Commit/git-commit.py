@@ -14,6 +14,7 @@ def commit(project_path, file_path, message, year, month, day, hour, minute):
 project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
 file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
 
+print("hello")
 # fill out information for commiting
 message = 'test: if its working'
 year = datetime.datetime.now().year
