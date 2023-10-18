@@ -15,9 +15,9 @@ project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
 file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
 
 # fill out information for commiting
-message = 'test: check for 2 month ago'
+message = 'test: if its working'
 year = datetime.datetime.now().year
-month = datetime.datetime.now().month-2
+month = datetime.datetime.now().month
 day = datetime.datetime.now().day
 hour = datetime.datetime.now().hour
 minute = datetime.datetime.now().minute
