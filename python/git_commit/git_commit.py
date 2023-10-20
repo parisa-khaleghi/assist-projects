@@ -12,8 +12,8 @@ def commit(project_path, file_path, message, year, month, day, hour, minute):
 
 
 # # fill out information for project path and file path on your system
-# project_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects"
-# file_path = "/Users/parisakhaleghi/Desktop/Coding/assist-projects/Python/Git Commit/git-commit.py"
+# project_path = "___The Repo Path that you clone on your system____"
+# file_path = "___The file path that you want to commit____"
 
 # # fill out information for commiting
 # message = 'update: remove unnecessary lines'
