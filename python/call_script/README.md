@@ -22,8 +22,8 @@ This script allows you to call a specific function from an external Git reposito
 In the provided code example, we call the `commit` function from the 'git_commit' module located in an external Git repository. We specify the paths to the project and file, the commit message, and the timestamp.
 
 ```python
-print(commit('/Users/parisakhaleghi/Desktop/Coding/assist_projects',
-             '/Users/parisakhaleghi/Desktop/Coding/assist_projects/python/call_script/call_script.py',
+print(commit('/Users/...../assist_projects',
+             '/Users/...../assist_projects/python/call_script/call_script.py',
              'update: call the function from module',
              datetime.datetime.now().year,
              datetime.datetime.now().month-1,
