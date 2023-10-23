@@ -25,9 +25,9 @@ from git_commit import commit
 #           'hour', and 'minute'
 print(commit('/Users/parisakhaleghi/Desktop/Coding/assist_projects',
              '/Users/parisakhaleghi/Desktop/Coding/assist_projects/python/call_script/call_script.py',
-             'update: call the function from madule',
+             'test: test again for past date',
              datetime.datetime.now().year,
-             datetime.datetime.now().month-1,
+             datetime.datetime.now().month-2,
              datetime.datetime.now().day,
              datetime.datetime.now().hour,
              datetime.datetime.now().minute
